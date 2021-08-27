@@ -13,7 +13,7 @@ namespace Progra_Agenda_Virtual
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Elige una opcion:");
+            Console.WriteLine("Elige:");
             Console.WriteLine("1 - Crear");
             Console.WriteLine("2 - Editar");
             Console.WriteLine("3 - Mostrar");
@@ -39,7 +39,7 @@ namespace Progra_Agenda_Virtual
         {
             StreamWriter archivo;
             string nombre;
-            Console.WriteLine("Escribe el nombre del archivo.");
+            Console.WriteLine("coloque el nombre del archivo.");
             nombre = Console.ReadLine();
             archivo = File.CreateText(nombre + ".txt");
         }
@@ -47,7 +47,7 @@ namespace Progra_Agenda_Virtual
         {
             StreamWriter edit;
             string nombre, texto;
-            Console.WriteLine("Ingresa el nombre del archivo a editar.");
+            Console.WriteLine(" el nombre del archivo a editar.");
             nombre = Console.ReadLine();
             Console.WriteLine("Ingresa texto");
             texto = Console.ReadLine();
@@ -59,7 +59,7 @@ namespace Progra_Agenda_Virtual
         {
             TextReader Leer;
             string nombre, texto;
-            Console.WriteLine("Que archivo quieres ver?");
+            Console.WriteLine("Que archivo quieres visualizar?");
             nombre = Console.ReadLine();
             Console.WriteLine("");
             Leer = File.OpenText(nombre + ".txt");
